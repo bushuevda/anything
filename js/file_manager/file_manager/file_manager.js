@@ -7,7 +7,7 @@ module.exports.file_manager = (function(){
 			let directories = arr_fd.filter((name) => !name.isFile());
 			arr_fd = arr_fd.filter((name) => name.isFile());
 			
-			let s = " ".repeat(tab)
+			let s = " ".repeat(tab);
 			console.log(s + parent_dir);
 			
 			s = " ".repeat(tab + 4);
@@ -37,7 +37,7 @@ module.exports.file_manager = (function(){
 		},
 		
 		parsePathFile: function parsePathFile(file){
-			return file.path + '/' + file.name
+			return file.path + '/' + file.name;
 		},
 		
 		aboutFile: function aboutFile(path){
